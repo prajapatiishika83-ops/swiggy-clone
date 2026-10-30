@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swiggy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="hero">
+  <!-- left decoration: paper bag + vegetables -->
+  <div class="deco-left" aria-hidden="true">
+    <div class="bag"></div>
+    <span class="v v1">🥬</span><span class="v v2">🫑</span><span class="v v3">🥦</span>
+    <span class="v v4">🌶️</span><span class="v v5">🥕</span>
+  </div>
+  <!-- right decoration: sushi plate + chopsticks -->
+  <div class="deco-right" aria-hidden="true">
+    <div class="plate"><span>🍣</span><span>🍱</span></div>
+    <i class="stick s1"></i><i class="stick s2"></i>
+  </div>
+
+  <nav class="nav">
+    <a href="#" class="logo"><span class="logo-icon">🛵</span>Swiggy</a>
+    <div class="nav-links">
+      <a href="#">Swiggy Corporate</a>
+      <a href="#">Partner with us</a>
+      <a href="#" class="btn-outline">Get the App <small>↗</small></a>
+      <a href="#" class="btn-black">Sign in</a>
+    </div>
+  </nav>
+
+  <h1>Order food &amp; groceries. Discover<br>best restaurants. Swiggy it!</h1>
+
+  <div class="search">
+    <label class="loc">
+      <span class="pin">📍</span>
+      <input type="text" placeholder="Enter your delivery location">
+      <span class="chev">⌄</span>
+    </label>
+    <label class="find">
+      <input type="text" placeholder="Search for restaurant, item or more">
+      <span class="mag">🔍</span>
+    </label>
+  </div>
+
+  <div class="cards">
+    <a href="#" class="card">
+      <h3>FOOD DELIVERY</h3>
+      <p>FROM RESTAURANTS</p>
+      <span class="tag">UPTO 60% OFF</span>
+      <span class="arrow">➜</span>
+      <span class="pic">🍳</span>
+    </a>
+    <a href="#" class="card">
+      <h3>INSTAMART</h3>
+      <p>INSTANT GROCERY</p>
+      <span class="tag">UPTO 60% OFF</span>
+      <span class="arrow">➜</span>
+      <span class="pic">🧺</span>
+    </a>
+    <a href="#" class="card">
+      <h3>DINEOUT</h3>
+      <p>EAT OUT &amp; SAVE MORE</p>
+      <span class="tag">UPTO 50% OFF</span>
+      <span class="arrow">➜</span>
+      <span class="pic">🍽️</span>
+    </a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- FOOD OPTIONS -->
+  <section class="block">
+    <div class="block-head">
+      <h2>Order our best food options</h2>
+      <div class="arrows">
+        <button class="ar light" data-dir="-1" data-target="food" aria-label="Previous">←</button>
+        <button class="ar dark" data-dir="1" data-target="food" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="food" id="food">
+      <a class="f" href="#"><span class="dish">🍛</span>North Indian</a>
+      <a class="f" href="#"><span class="dish">🍕</span>Pizza</a>
+      <a class="f" href="#"><span class="dish">🍔</span>Burger</a>
+      <a class="f" href="#"><span class="dish">🎂</span>Cake</a>
+      <a class="f" href="#"><span class="dish">🍲</span>Biryani</a>
+      <a class="f" href="#"><span class="dish">🌯</span>Rolls</a>
+      <a class="f" href="#"><span class="dish">🧇</span>Desserts</a>
+      <a class="f" href="#"><span class="dish">🍜</span>Chinese</a>
+      <a class="f" href="#"><span class="dish">🥘</span>South Indian</a>
+      <a class="f" href="#"><span class="dish">🫓</span>Paratha</a>
+      <a class="f" href="#"><span class="dish">🍝</span>Pasta</a>
+      <a class="f" href="#"><span class="dish">🍨</span>Ice Cream</a>
+      <a class="f" href="#"><span class="dish">🍰</span>Pastry</a>
+      <a class="f" href="#"><span class="dish">🍡</span>Rasmalai</a>
+      <a class="f" href="#"><span class="dish">☕</span>Coffee</a>
+      <a class="f" href="#"><span class="dish">🥗</span>Salads</a>
+    </div>
+  </section>
+
+  <!-- GROCERIES -->
+  <section class="block">
+    <div class="block-head">
+      <h2>Shop groceries on Instamart</h2>
+      <div class="arrows">
+        <button class="ar light" data-dir="-1" data-target="groc" aria-label="Previous">←</button>
+        <button class="ar dark" data-dir="1" data-target="groc" aria-label="Next">→</button>
+      </div>
+    </div>
+    <div class="groc" id="groc">
+      <a class="g" href="#"><span class="tile">🥦</span>Fresh<br>Vegetables</a>
+      <a class="g" href="#"><span class="tile">🥑</span>Fresh Fruits</a>
+      <a class="g" href="#"><span class="tile">🍞</span>Dairy, Bread<br>and Eggs</a>
+      <a class="g" href="#"><span class="tile">🌾</span>Rice, Atta and<br>Dals</a>
+      <a class="g" href="#"><span class="tile">🫙</span>Masalas and<br>Dry Fruits</a>
+      <a class="g" href="#"><span class="tile">🛢️</span>Oils and Ghee</a>
+      <a class="g" href="#"><span class="tile">🍿</span>Munchies</a>
+      <a class="g" href="#"><span class="tile">🥤</span>Cold Drinks</a>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // arrow buttons scroll the rows
+  document.querySelectorAll('.ar').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var row = document.getElementById(btn.dataset.target);
+      row.scrollBy({ left: row.clientWidth * 0.8 * btn.dataset.dir, behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
